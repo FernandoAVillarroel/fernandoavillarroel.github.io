@@ -20,6 +20,28 @@
             }
         }
         
+        @keyframes slideInFromLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes slideInFromRight {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
         @keyframes float {
             0%, 100% {
                 transform: translateY(0px);
@@ -214,7 +236,13 @@
             border-radius: 2px;
         }
         
-        .about-section, .projects-section, .contact-section {
+        .about-section, .contact-section {
+            padding: 100px 0;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .projects-section {
             padding: 100px 0;
             animation: fadeInUp 1s ease;
             position: relative;
@@ -312,6 +340,30 @@
             color: #a855f7;
         }
         
+        .whatsapp-icon {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.8rem;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.5);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .whatsapp-icon:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.7);
+        }
+        
         footer {
             background: rgba(26, 26, 46, 0.9);
             border-top: 1px solid rgba(168, 85, 247, 0.3);
@@ -397,6 +449,14 @@
             .section-title {
                 font-size: 2rem;
             }
+            
+            .whatsapp-icon {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+                font-size: 1.5rem;
+            }
         }
     </style>
 </head>
@@ -404,6 +464,11 @@
 
     <!-- Partículas de fondo -->
     <div id="particles-js"></div>
+
+    <!-- Icono de WhatsApp -->
+    <a href="https://wa.me/543853048290" target="_blank" class="whatsapp-icon">
+        <i class="bi bi-whatsapp"></i>
+    </a>
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
@@ -453,9 +518,9 @@
             <h2 class="section-title text-center mb-5">Acerca de Mí</h2>
             <div class="row align-items-center">
                 <div class="col-lg-4 text-center mb-4 mb-lg-0">
-                    <img src="IMG_5159.PNG" alt="Perfil" class="profile-img">
+                    <img src="IMG_5159.PNG" alt="Perfil" class="profile-img" style="animation: slideInFromLeft 1s ease forwards;">
                 </div>
-                <div class="col-lg-8">
+                <div class="col-lg-8" style="animation: slideInFromRight 1s ease forwards;">
                     <h3 class="mb-4">¡Hola! Soy Fernando Villarroel</h3>
                     <p class="lead mb-4">
                         Soy un desarrollador apasionado por crear soluciones web innovadoras y funcionales. 
@@ -616,10 +681,10 @@
 
     <section id="contact" class="contact-section">
         <div class="container">
-            <h2 class="section-title text-center mb-5">Contacto</h2>
+            <h2 class="section-title text-center mb-5" style="animation: slideInFromLeft 1s ease forwards;">Contacto</h2>
             
             <div class="row g-4 mb-5">
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-3" style="animation: slideInFromLeft 1s ease 0.2s forwards;">
                     <a href="mailto:agustinvillarroel17@gmail.com" class="text-decoration-none">
                         <div class="contact-card text-center">
                             <div class="contact-icon mx-auto mb-3">
@@ -631,19 +696,19 @@
                     </a>
                 </div>
                 
-                <div class="col-md-6 col-lg-3">
-                    <a href="tel:3853048290" class="text-decoration-none">
+                <div class="col-md-6 col-lg-3" style="animation: slideInFromLeft 1s ease 0.4s forwards;">
+                    <a href="https://wa.me/543853048290" target="_blank" class="text-decoration-none">
                         <div class="contact-card text-center">
                             <div class="contact-icon mx-auto mb-3">
-                                <i class="bi bi-phone"></i>
+                                <i class="bi bi-whatsapp"></i>
                             </div>
-                            <h5>Teléfono</h5>
+                            <h5>WhatsApp</h5>
                             <p class="small mb-0">+54 385 304 8290</p>
                         </div>
                     </a>
                 </div>
                 
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-3" style="animation: slideInFromRight 1s ease 0.4s forwards;">
                     <a href="https://github.com/FernandoAVillarroel" target="_blank" class="text-decoration-none">
                         <div class="contact-card text-center">
                             <div class="contact-icon mx-auto mb-3">
@@ -655,7 +720,7 @@
                     </a>
                 </div>
                 
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-3" style="animation: slideInFromRight 1s ease 0.2s forwards;">
                     <a href="https://www.linkedin.com/in/fernando-villarroel-a635a431b/" target="_blank" class="text-decoration-none">
                         <div class="contact-card text-center">
                             <div class="contact-icon mx-auto mb-3">
@@ -668,7 +733,7 @@
                 </div>
             </div>
             
-            <div class="row justify-content-center">
+            <div class="row justify-content-center" style="animation: slideInFromRight 1s ease forwards;">
                 <div class="col-lg-8">
                     <div class="card p-4">
                         <h3 class="text-center mb-4" style="color: #ffffff;">Envíame un mensaje</h3>
@@ -706,6 +771,9 @@
                 </a>
                 <a href="mailto:agustinvillarroel17@gmail.com" class="social-icon">
                     <i class="bi bi-envelope"></i>
+                </a>
+                <a href="https://wa.me/543853048290" target="_blank" class="social-icon">
+                    <i class="bi bi-whatsapp"></i>
                 </a>
             </div>
             <p class="mb-0">&copy; 2025 Fernando Villarroel. Todos los derechos reservados.</p>
@@ -760,64 +828,6 @@
           retina_detect: true
         });
 
-        // Sistema de partículas que siguen al cursor
-        const canvas = document.createElement('canvas');
-        canvas.style.position = 'fixed';
-        canvas.style.top = '0';
-        canvas.style.left = '0';
-        canvas.style.pointerEvents = 'none';
-        canvas.style.zIndex = '9999';
-        document.body.appendChild(canvas);
-
-        const ctx = canvas.getContext('2d');
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-
-        const particles = [];
-
-        document.addEventListener('mousemove', (e) => {
-            for (let i = 0; i < 3; i++) {
-                particles.push({
-                    x: e.clientX,
-                    y: e.clientY,
-                    radius: Math.random() * 3 + 1,
-                    color: ['#a855f7', '#ec4899', '#06b6d4'][Math.floor(Math.random() * 3)],
-                    vx: (Math.random() - 0.5) * 2,
-                    vy: (Math.random() - 0.5) * 2,
-                    life: 100
-                });
-            }
-        });
-
-        function animate() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            
-            particles.forEach((p, i) => {
-                p.x += p.vx;
-                p.y += p.vy;
-                p.life--;
-                
-                if (p.life <= 0) {
-                    particles.splice(i, 1);
-                } else {
-                    ctx.globalAlpha = p.life / 100;
-                    ctx.fillStyle = p.color;
-                    ctx.beginPath();
-                    ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-                    ctx.fill();
-                }
-            });
-            
-            requestAnimationFrame(animate);
-        }
-
-        animate();
-
-        window.addEventListener('resize', () => {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-        });
-
         // Navegación suave
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -845,7 +855,20 @@
         const observer = new IntersectionObserver(function(entries) {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.style.animation = 'fadeInUp 1s ease forwards';
+                    if (entry.target.closest('#about') || entry.target.closest('#contact')) {
+                        // Para las secciones "Acerca de" y "Contacto", usamos animaciones de deslizamiento
+                        const elements = entry.target.closest('section').querySelectorAll('[style*="animation"]');
+                        elements.forEach(el => {
+                            const animation = el.style.animation;
+                            el.style.animation = 'none';
+                            setTimeout(() => {
+                                el.style.animation = animation;
+                            }, 10);
+                        });
+                    } else {
+                        // Para el resto, usamos fadeInUp
+                        entry.target.style.animation = 'fadeInUp 1s ease forwards';
+                    }
                 }
             });
         }, observerOptions);
