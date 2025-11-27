@@ -5,9 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio - Fernando Villarroel</title>
     
+    <!-- ⬇️ AQUÍ AGREGAS LAS NUEVAS META TAGS ⬇️ -->
+    <meta name="description" content="Fernando Villarroel - Técnico Superior en Desarrollo de Software. Especializado en desarrollo Full Stack con PHP, Laravel, Django, React y más.">
+    <meta name="keywords" content="desarrollador full stack, php, laravel, django, react, python, santiago del estero, argentina">
+    <meta name="author" content="Fernando Villarroel">
+    
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="Fernando Villarroel - Desarrollador Full Stack">
+    <meta property="og:description" content="Portafolio profesional de desarrollo web Full Stack">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tudominio.com">
+    <meta property="og:image" content="https://tudominio.com/IMG_5159.PNG">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Fernando Villarroel - Desarrollador Full Stack">
+    <meta name="twitter:description" content="Portafolio profesional de desarrollo web">
+    <meta name="twitter:image" content="https://tudominio.com/IMG_5159.PNG">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
     <style>
         @keyframes fadeInUp {
             from {
@@ -62,7 +81,44 @@
                 background-position: 0% 50%;
             }
         }
-        
+        @keyframes rotate {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.tech-logo {
+    font-size: 3rem;
+    margin-bottom: 8px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.tech-logo:hover {
+    animation: rotate 1s ease-in-out;
+    transform: scale(1.1);
+}
+
+.tech-stack-item {
+    text-align: center;
+    padding: 10px 5px;
+    transition: transform 0.3s ease;
+}
+
+.tech-stack-item p {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #e0e0e0;
+    font-weight: 500;
+}
+
+.tech-stack-item:hover {
+    transform: translateY(-5px);
+}
+
         body {
             background: linear-gradient(-45deg, #1a1a2e, #16213e, #0f3460, #1a1a2e);
             background-size: 400% 400%;
@@ -482,6 +538,9 @@
                         <a class="nav-link" href="#about">Acerca de</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#projects">Proyectos</a>
                     </li>
                     <li class="nav-item">
@@ -497,8 +556,8 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
                     <h1 class="hero-title">Hola, soy<br><span class="gradient-text">Fernando Villarroel</span></h1>
-                    <p class="hero-subtitle">Desarrollador Full Stack</p>
-                    <p class="hero-description">Creando experiencias digitales innovadoras y soluciones web modernas</p>
+                    <p class="hero-subtitle">Técnico Superior en Desarrollo de Software</p>
+                    <p class="hero-description">Desarrollador Full Stack con experiencia en soluciones web innovadoras</p>
                     <div class="hero-buttons mt-4">
                         <a href="#projects" class="btn btn-gradient me-3">Ver Proyectos</a>
                         <a href="#contact" class="btn btn-outline-custom">Contactar</a>
@@ -521,57 +580,163 @@
                     <img src="IMG_5159.PNG" alt="Perfil" class="profile-img" style="animation: slideInFromLeft 1s ease forwards;">
                 </div>
                 <div class="col-lg-8" style="animation: slideInFromRight 1s ease forwards;">
-                    <h3 class="mb-4">¡Hola! Soy Fernando Villarroel</h3>
-                    <p class="lead mb-4">
-                        Soy un desarrollador apasionado por crear soluciones web innovadoras y funcionales. 
-                        Me especializo en tecnologías modernas y disfruto transformando ideas en realidad digital.
-                    </p>
-                    <p class="mb-4">
-                        Profesional proactivo y orientado a resultados, con sólida capacidad de aprendizaje y adaptación a nuevas tecnologías. Me destaco por mi facilidad para comunicarme y trabajar en equipo, liderando proyectos con enfoque ágil y manteniendo altos estándares de calidad. Como estudiante avanzado de Técnico en Desarrollo de Software, he liderado el proyecto FONAVI, donde diseñé e implementé un sistema de liquidación de sueldos, optimizando procesos y garantizando la seguridad de los datos. Busco desafíos que me permitan seguir creciendo y aportando valor en entornos colaborativos y dinámicos.
-                    </p>
+                 <h3 class="mb-4"></h3>
+<p class="lead mb-4">
+    Soy Técnico Superior en Desarrollo de Software y Desarrollador Full Stack apasionado por transformar ideas en aplicaciones web que resuelven problemas reales.
+</p>
+<p class="mb-4">
+    Durante mi pasantía en el IPVU, lideré el desarrollo del sistema FONAVI, una aplicación 
+    que automatizó la liquidación de sueldos reduciendo errores en un 95% y ahorrando días 
+    de trabajo manual. Trabajé con Django, MySQL, JavaScript y Bootstrap 5, implementando 
+    desde la arquitectura backend hasta las validaciones en tiempo real del frontend.
+</p>
+<p class="mb-4">
+    Me encanta enfrentarme a desafíos técnicos complejos y aprender nuevas tecnologías. 
+    Actualmente estoy profundizando en Laravel y Vue.js para ampliar mi stack de desarrollo. 
+    Trabajo bien en equipo, comunico ideas con claridad y me adapto rápido a entornos ágiles.
+</p>
+<p class="mb-4">
+    Busco oportunidades donde pueda seguir creciendo como desarrollador, colaborar con equipos 
+    talentosos y construir software que genere impacto real.
+</p>
                     
-                    <h4 class="mb-3">Habilidades Técnicas</h4>
-                    <div class="row g-3 mb-4">
-                        <div class="col-md-4">
-                            <div class="skill-box text-center">
-                                <i class="bi bi-code-slash skill-icon"></i>
-                                <h5>Desarrollo Web</h5>
-                                <div class="mt-3">
-                                    <span class="tech-item">HTML</span>
-                                    <span class="tech-item">CSS</span>
-                                    <span class="tech-item">JavaScript</span>
-                                    <span class="tech-item">Bootstrap</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="skill-box text-center">
-                                <i class="bi bi-layers skill-icon"></i>
-                                <h5>Frameworks</h5>
-                                <div class="mt-3">
-                                    <span class="tech-item">React</span>
-                                    <span class="tech-item">Vue.js</span>
-                                    <span class="tech-item">Django</span>
-                                    <span class="tech-item">Spring Boot</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="skill-box text-center">
-                                <i class="bi bi-server skill-icon"></i>
-                                <h5>Backend & BD</h5>
-                                <div class="mt-3">
-                                    <span class="tech-item">Python</span>
-                                    <span class="tech-item">PHP</span>
-                                    <span class="tech-item">Java</span>
-                                    <span class="tech-item">MySQL</span>
-                                    <span class="tech-item">PostgreSQL</span>
-                                    <span class="tech-item">SQL Server</span>
-                                    <span class="tech-item">SQLite</span>
-                                </div>
-                            </div>
-                        </div>
+                   <h4 class="mb-3">Habilidades Técnicas</h4>
+<div class="row g-3 mb-4">
+    <!-- Frontend -->
+    <div class="col-md-4">
+        <div class="skill-box">
+            <h5 class="mb-4">Desarrollo Frontend</h5>
+            <div class="row g-3">
+                <div class="col-4">
+                    <div class="tech-stack-item">
+                       <i class="devicon-html5-plain colored tech-logo"></i>
+                        <p class="small mb-0">HTML5</p>
                     </div>
+                </div>
+                <div class="col-4">
+                    <div class="tech-stack-item">
+                       <i class="devicon-css3-plain colored tech-logo"></i>
+                        <p class="small mb-0">CSS3</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="tech-stack-item">
+                      <i class="devicon-javascript-plain colored tech-logo"></i>
+                        <p class="small mb-0">JavaScript</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="tech-stack-item">
+                       <i class="devicon-bootstrap-plain colored tech-logo" style="color: #7952B3;"></i>
+                        <p class="small mb-0">Bootstrap</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="tech-stack-item">
+                      <i class="devicon-react-original tech-logo" style="color: #61DAFB;"></i>
+                        <p class="small mb-0">React</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="tech-stack-item">
+                     <i class="devicon-vuejs-plain tech-logo" style="color: #4FC08D;"></i>
+                        <p class="small mb-0">Vue.js</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Backend & Frameworks -->
+    <div class="col-md-4">
+        <div class="skill-box">
+            <h5 class="mb-4">Backend & Frameworks</h5>
+            <div class="row g-3">
+                <div class="col-4">
+                    <div class="tech-stack-item">
+                     <i class="devicon-python-plain colored tech-logo"></i>
+                        <p class="small mb-0">Python</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="tech-stack-item">
+                   <i class="devicon-django-plain tech-logo" style="color: #44B78B;"></i>
+                        <p class="small mb-0">Django</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="tech-stack-item">
+                      <i class="devicon-php-plain tech-logo" style="color: #777BB4;"></i>
+                        <p class="small mb-0">PHP</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="tech-stack-item">
+                       <i class="devicon-laravel-plain colored tech-logo"></i>
+                        <p class="small mb-0">Laravel</p>
+                    </div>
+                </div>
+                <div class="col-4">
+    <div class="tech-stack-item">
+        <i class="devicon-java-plain tech-logo" style="color: #007396;"></i>
+        <p class="small mb-0" style="color: #e0e0e0;">Java</p>
+    </div>
+</div>
+                <div class="col-4">
+                    <div class="tech-stack-item">
+                      <i class="devicon-spring-plain colored tech-logo"></i>
+                        <p class="small mb-0">Spring Boot</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bases de Datos & Herramientas -->
+    <div class="col-md-4">
+        <div class="skill-box">
+            <h5 class="mb-4">Bases de Datos & Herramientas</h5>
+            <div class="row g-3">
+                <div class="col-4">
+                    <div class="tech-stack-item">
+                      <i class="devicon-mysql-original colored tech-logo" style="color: #4479A1;"></i>
+                        <p class="small mb-0">MySQL</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="tech-stack-item">
+                     <i class="devicon-postgresql-plain colored tech-logo" style="color: #336791;"></i>
+                        <p class="small mb-0">PostgreSQL</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="tech-stack-item">
+                     <i class="devicon-microsoftsqlserver-plain colored tech-logo" style="color: #CC2927;"></i>
+                        <p class="small mb-0">SQL Server</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="tech-stack-item">
+                     <i class="devicon-sqlite-plain colored tech-logo" style="color: #003B57;"></i>
+                        <p class="small mb-0">SQLite</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="tech-stack-item">
+                     <i class="devicon-git-plain colored tech-logo" style="color: #F05032;"></i>
+                        <p class="small mb-0">Git</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="tech-stack-item">
+                        <i class="devicon-github-original tech-logo"></i>
+                        <p class="small mb-0">GitHub</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
                     
                     <h4 class="mb-3">Habilidades Blandas</h4>
                     <div class="row g-3">
@@ -602,82 +767,178 @@
         </div>
     </section>
 
-    <section id="projects" class="projects-section bg-dark bg-opacity-25">
-        <div class="container">
-            <h2 class="section-title text-center mb-5">Proyectos</h2>
-            <div class="row g-4">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <img src="Screenshot_659.png" alt="FONAVI Project" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">FONAVI Project</h5>
-                            <p class="card-text">Sistema web para la gestión y liquidación de sueldos del fondo FONAVI en el IPVU.</p>
-                            <div class="mb-3">
-                                <span class="badge me-2">Python</span>
-                                <span class="badge me-2">Django</span>
-                                <span class="badge me-2">Bootstrap 5</span>
-                                <span class="badge">MySQL</span>
+<section id="experience" class="about-section bg-dark bg-opacity-25">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">Experiencia</h2>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card mb-4" style="position: relative; overflow: hidden; animation: slideInFromLeft 1s ease forwards;">
+                    <!-- Imagen de fondo sutil -->
+                    <div style="position: absolute; top: 0; right: 0; width: 40%; height: 100%; opacity: 0.05; background-image: url('Screenshot_659.png'); background-size: cover; background-position: center;"></div>
+                    
+                    <div class="card-body" style="position: relative; z-index: 1;">
+                        <div class="d-flex justify-content-between align-items-start mb-4 flex-wrap">
+                            <div>
+                                <h4 class="mb-2" style="color: #ffffff;">Desarrollador Full Stack - Pasantía</h4>
+                                <h5 style="color: #a855f7;">Instituto Provincial de Vivienda y Urbanismo (IPVU)</h5>
+                                <p class="mb-0" style="color: #999;">Santiago del Estero, Argentina</p>
                             </div>
-                            <a href="https://github.com/FernandoAVillarroel/fonavi_project" target="_blank" class="btn btn-gradient btn-sm me-2">
-                                <i class="bi bi-github"></i> GitHub
-                            </a>
-                            <a href="https://github.com/FernandoAVillarroel/fonavi_project" target="_blank" class="btn btn-outline-custom btn-sm">
-                                <i class="bi bi-eye"></i> Ver
-                            </a>
+                            <span class="badge mt-2 mt-md-0">Jun 2024 - Nov 2024</span>
                         </div>
-                    </div>
-                </div>
-                
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-img-top d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); height: 200px;">
-                            <i class="bi bi-music-note-beamed" style="font-size: 4rem; color: white;"></i>
+                        
+                        <div class="mb-4">
+                            <p style="color: #d0d0d0; line-height: 1.8;">
+                                Durante mi pasantía en el IPVU, lideré el desarrollo completo del sistema FONAVI (Fondo Nacional de Vivienda), 
+                                una aplicación web crítica para la gestión de empleados y liquidación automatizada de sueldos. 
+                                Este proyecto optimizó procesos manuales que afectaban directamente a los trabajadores del instituto.
+                            </p>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Sonidos de la Ciudad</h5>
-                            <p class="card-text">Mini sitio web para el Festival Sonidos de la Ciudad, con información de eventos y artistas.</p>
-                            <div class="mb-3">
-                                <span class="badge me-2">HTML5</span>
-                                <span class="badge me-2">CSS3</span>
-                                <span class="badge me-2">JavaScript</span>
-                                <span class="badge">PHP</span>
+                        
+                        <h6 class="mt-4 mb-3" style="color: #a855f7;">Responsabilidades principales:</h6>
+                        <ul style="color: #d0d0d0; line-height: 1.8;">
+                            <li>Diseño e implementación de arquitectura full stack desde cero: Django (backend), MySQL (base de datos) y frontend con JavaScript, CSS3 y Bootstrap 5</li>
+                            <li>Desarrollo de interfaces de usuario responsivas e intuitivas optimizadas para diferentes dispositivos</li>
+                            <li>Implementación de funcionalidades dinámicas e interactivas con JavaScript vanilla para mejorar la experiencia del usuario</li>
+                            <li>Gestión de base de datos relacional con múltiples tablas para empleados, conceptos salariales y liquidaciones</li>
+                            <li>Aplicación de medidas de seguridad para proteger datos sensibles de nómina</li>
+                        </ul>
+                        
+                        <h6 class="mt-4 mb-3" style="color: #a855f7;">Problemas resueltos:</h6>
+                        <ul style="color: #d0d0d0; line-height: 1.8;">
+                            <li>Proceso manual de cálculo: Automaticé completamente el cálculo de liquidaciones que antes tomaba días y generaba errores frecuentes, reduciéndolo a minutos con precisión del 100%</li>
+                            <li>Datos dispersos: Centralicé información de empleados que estaba fragmentada en múltiples hojas de Excel, creando una única fuente de verdad accesible desde cualquier lugar</li>
+                            <li>Falta de trazabilidad: Implementé un historial completo de liquidaciones que permite auditar y consultar cualquier pago histórico</li>
+                            <li>Exportación de reportes: Desarrollé sistema de generación automática de comprobantes de pago en PDF y reportes en Excel, eliminando la creación manual de documentos</li>
+                            <li>Curva de aprendizaje: Diseñé una interfaz intuitiva con validaciones en tiempo real que permite usar el sistema sin capacitación técnica previa</li>
+                            <li>Seguridad de datos: Implementé autenticación robusta, control de accesos por roles y validación exhaustiva de datos para proteger información financiera confidencial</li>
+                        </ul>
+                        
+                        <h6 class="mt-4 mb-3" style="color: #a855f7;">Tecnologías utilizadas:</h6>
+                        <div>
+                            <span class="tech-item">Python</span>
+                            <span class="tech-item">Django</span>
+                            <span class="tech-item">JavaScript</span>
+                            <span class="tech-item">MySQL</span>
+                            <span class="tech-item">Bootstrap 5</span>
+                            <span class="tech-item">HTML5</span>
+                            <span class="tech-item">CSS3</span>
+                            <span class="tech-item">Git</span>
+                        </div>
+                        
+                        <h6 class="mt-4 mb-3" style="color: #a855f7;">Impacto del proyecto:</h6>
+                        <div class="row g-3 mt-2">
+                            <div class="col-md-3 col-6">
+                                <div class="text-center p-3" style="background: rgba(168, 85, 247, 0.1); border-radius: 10px;">
+                                    <h4 style="color: #a855f7; margin: 0;">95%</h4>
+                                    <small style="color: #b0b0b0;">Reducción de errores</small>
+                                </div>
                             </div>
-                            <a href="https://github.com/FernandoAVillarroel/sonidos-de-la-ciudad" target="_blank" class="btn btn-gradient btn-sm me-2">
-                                <i class="bi bi-github"></i> GitHub
-                            </a>
-                            <a href="https://sonidos-de-la-ciudad-fest.netlify.app/" target="_blank" class="btn btn-outline-custom btn-sm">
-                                <i class="bi bi-eye"></i> Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-img-top d-flex align-items-center justify-content-center" style="background: linear-gradient(45deg, #a855f7, #ec4899); height: 200px;">
-                            <i class="bi bi-airplane" style="font-size: 4rem; color: white;"></i>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Proyecto Turismo</h5>
-                            <p class="card-text">Prototipo de sitio para servicio de turismo, diseño moderno y responsivo.</p>
-                            <div class="mb-3">
-                                <span class="badge me-2">PHP</span>
-                                <span class="badge me-2">Laravel</span>
-                                <span class="badge me-2">Vue.js</span>
-                                <span class="badge">JavaScript</span>
+                            <div class="col-md-3 col-6">
+                                <div class="text-center p-3" style="background: rgba(168, 85, 247, 0.1); border-radius: 10px;">
+                                    <h4 style="color: #a855f7; margin: 0;">80%</h4>
+                                    <small style="color: #b0b0b0;">Ahorro de tiempo</small>
+                                </div>
                             </div>
-                            <a href="https://github.com/FernandoAVillarroel/Proyecto_Turismo" target="_blank" class="btn btn-gradient btn-sm me-2">
-                                <i class="bi bi-github"></i> GitHub
-                            </a>
-                            <a href="https://github.com/FernandoAVillarroel/Proyecto_Turismo" target="_blank" class="btn btn-outline-custom btn-sm">
-                                <i class="bi bi-eye"></i> Ver
-                            </a>
+                            <div class="col-md-3 col-6">
+                                <div class="text-center p-3" style="background: rgba(168, 85, 247, 0.1); border-radius: 10px;">
+                                    <h4 style="color: #a855f7; margin: 0;">100%</h4>
+                                    <small style="color: #b0b0b0;">Centralización</small>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="text-center p-3" style="background: rgba(168, 85, 247, 0.1); border-radius: 10px;">
+                                    <h4 style="color: #a855f7; margin: 0;">6 meses</h4>
+                                    <small style="color: #b0b0b0;">Duración</small>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+  <section id="projects" class="projects-section bg-dark bg-opacity-25">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">Proyectos</h2>
+        <div class="row g-4">
+            
+            <!-- Proyecto 1: FONAVI -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="Screenshot_659.png" alt="FONAVI Project" class="card-img-top" style="object-fit: contain; background: #1a1a2e;">
+                    <div class="card-body">
+                        <h5 class="card-title">FONAVI Project</h5>
+                        <p class="card-text">Sistema web para la gestión y liquidación de sueldos del fondo FONAVI en el IPVU.</p>
+                      <div class="mb-3">
+    <span class="badge me-2 mb-2">PHP</span>
+    <span class="badge me-2 mb-2">Laravel</span>
+    <span class="badge me-2 mb-2">Vue.js</span>
+    <span class="badge me-2 mb-2">JavaScript</span>
+    <span class="badge me-2 mb-2">MySQL</span>
+</div>
+                        <a href="https://github.com/FernandoAVillarroel/fonavi_project" target="_blank" class="btn btn-gradient btn-sm me-2">
+                            <i class="bi bi-github"></i> GitHub
+                        </a>
+                        <a href="https://github.com/FernandoAVillarroel/fonavi_project" target="_blank" class="btn btn-outline-custom btn-sm">
+                            <i class="bi bi-eye"></i> Ver
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 2: Aplicación Web de Turismo -->
+            <div class="col-12 col-md-6 col-lg-4">
+    <div class="card">
+        <img src="collage-turismo.jpg" alt="Aplicación Web de Turismo" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">Aplicación Web de Turismo</h5>
+            <p class="card-text">Sistema web desarrollado con Laravel y Vue.js para gestión integral de servicios turísticos y reservas.</p>
+            <div class="mb-3">
+                <span class="badge me-2 mb-2">PHP</span>
+                <span class="badge me-2 mb-2">Laravel</span>
+                <span class="badge me-2 mb-2">Vue.js</span>
+                <span class="badge me-2 mb-2">JavaScript</span>
+                <span class="badge me-2 mb-2">MySQL</span>
+            </div>
+           <a href="https://github.com/FernandoAVillarroel/turismo-argentina-laravel" target="_blank" class="btn btn-gradient btn-sm me-2">
+    <i class="bi bi-github"></i> GitHub
+</a>
+<a href="https://github.com/FernandoAVillarroel/turismo-argentina-laravel" target="_blank" class="btn btn-outline-custom btn-sm">
+    <i class="bi bi-eye"></i> Ver
+</a>
+        </div>
+    </div>
+</div>
+            
+          <!-- Proyecto 3: Sonidos de la Ciudad -->
+<div class="col-12 col-md-6 col-lg-4">
+    <div class="card">
+        <img src="minimovil-1.jpg" alt="Festival Sonidos de la Ciudad" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">Sonidos de la Ciudad</h5>
+            <p class="card-text">Mini sitio web para el Festival Sonidos de la Ciudad, con información de eventos y artistas.</p>
+            <div class="mb-3">
+                <span class="badge me-2 mb-2">HTML5</span>
+                <span class="badge me-2 mb-2">CSS3</span>
+                <span class="badge me-2 mb-2">JavaScript</span>
+                <span class="badge me-2 mb-2">PHP</span>
+            </div>
+            <a href="https://github.com/FernandoAVillarroel/sonidos-de-la-ciudad" target="_blank" class="btn btn-gradient btn-sm me-2">
+                <i class="bi bi-github"></i> GitHub
+            </a>
+            <a href="https://sonidos-de-la-ciudad-fest.netlify.app/" target="_blank" class="btn btn-outline-custom btn-sm">
+                <i class="bi bi-eye"></i> Demo
+            </a>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+</section>
+
 
     <section id="contact" class="contact-section">
         <div class="container">
