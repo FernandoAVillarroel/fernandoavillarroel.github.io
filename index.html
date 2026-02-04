@@ -23,6 +23,9 @@
     <meta name="twitter:description" content="Portafolio profesional de desarrollo web">
     <meta name="twitter:image" content="https://tudominio.com/IMG_5159.PNG">
 
+    <!-- ✅ AGREGA ESTA LÍNEA AQUÍ PARA PRECARGAR LA IMAGEN -->
+<link rel="preload" as="image" href="IMG_5159.PNG">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
@@ -264,14 +267,23 @@
             opacity: 0.7;
         }
         
-       .profile-img {
-    width: 250px;  /* Reduce de 300px */
-    height: 250px; /* Reduce de 300px */
+    .profile-img {
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
     object-fit: cover;
-    object-position: top center; /* Enfoca tu cara */
+    object-position: center 15%;
     border: 5px solid #a855f7;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    /* Mejora la nitidez */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: high-quality;
+    /* Optimización de renderizado */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
         
         .section-title {
@@ -503,11 +515,12 @@
     height: 280px;
     border-radius: 50%;
     object-fit: cover;
-    object-position: top 25%; /* Esto enfocará más tu cara */
-    image-rendering: -webkit-optimize-contrast; /* Mejora nitidez */
-    image-rendering: crisp-edges;
+    object-position: center 20%; /* Ajusta este valor para centrar mejor tu cara */
     border: 5px solid #a855f7;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: high-quality;
 }
             
             .section-title {
